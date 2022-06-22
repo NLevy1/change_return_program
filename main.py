@@ -1,21 +1,21 @@
 money_dict = {
-    'fifties': 0,
-    'twenties': 0,
-    'tens': 0,
-    'fives': 0,
-    'twos': 0,
-    'ones': 0,
-    'fifty_cents': 0,
-    'twenty_cents': 0,
-    'ten_cents': 0,
-    'five_cents': 0,
-    'two_cents': 0,
-    'one_cents': 0
+    'Fifties': 0,
+    'Twenties': 0,
+    'Tens': 0,
+    'Fives': 0,
+    'Twos': 0,
+    'Ones': 0,
+    'Fifty cents': 0,
+    'Twenty cents': 0,
+    'Ten_cents': 0,
+    'Five_cents': 0,
+    'Two_cents': 0,
+    'One_cents': 0
 }
 
 money_list = list(money_dict.keys())
 amount_list = [50, 20, 10, 5, 2, 1, 0.5, 0.2, 0.1, 0.05, 0.02, 0.01]
-
+calculating = True
 
 def set_price_and_money(payment_commenced=False, price=0, money=0):
     price_of_item = price
@@ -54,6 +54,7 @@ def what_to_give_back():
     print("\nThe change is as follows: \n")
     for k, v in money_dict.items():
         print(f"{k}: {v}")
+
 
 
 if __name__ == "__main__":
